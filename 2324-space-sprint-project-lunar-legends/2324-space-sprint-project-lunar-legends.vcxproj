@@ -128,6 +128,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="2324-space-sprint-project-lunar-legends.cpp" />
+    <ClCompile Include="Source\menu.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Header Files\menu.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
