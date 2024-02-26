@@ -129,9 +129,11 @@
   <ItemGroup>
     <ClCompile Include="2324-space-sprint-project-lunar-legends.cpp" />
     <ClCompile Include="Source\menu.cpp" />
+    <ClCompile Include="Source\questions.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Header Files\menu.h" />
+    <ClInclude Include="Header Files\questions.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
