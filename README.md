@@ -1,18 +1,15 @@
-<h1 align="center">Team Lunar Legents</h1>
-<p align="center">
-        <img src ="assets/banner.png"/>
-</p>
+<h1 align="center">Team Lunar Legends</h1>
 ## Our Team
 <b>
 <a href = “https://github.com/IMIvanov22“>  Ivan Ivanov [ Backend Developer ] </a><br>
-<a href=“https://github.com/MMDoychev22”>  Mitko Doichev [ Backend Developer ] </a><br>
+<a href=“https://github.com/MMDoychev22”>  Mitko Doychev [ Backend Developer ] </a><br>
 <a href=“https://github.com/SDDimitrov22”>  Stefan Dimitrov [ Backend Developer ] </a><br>
 <a href =“https://github.com/GSYanchev22”>  Gabriel Yanchev [ Scrum Trainer ] </a> 
 </b>
+<br>
 ## 💻 About
 <br>
 <b><p align="center">Lunar Legends presents a project related to learning new and interesting facts about the universe and space. Through easy, medium and difficult questions, a person can enrich his knowledge, learn something new. The project is not an application, our project is a console application. The main goal is knowledge. That's why we decided to create this project.
-
 </p></b>
 <br>
 ## 🗂️Our Technologies
