@@ -1,65 +1,71 @@
 #include "../Header Files/questions.h"
-
+#include "../Header Files/menu.h"
+//function for easy question
 void questionsEasy()
 {
     cout << "Instructions: " << endl;
     cout << "Every answer starts with capital letters even if it has two words like an answer." << endl;
     cout << "Press ENTER when you are ready with your answer." << endl;
     string a, b, c, d, e, f, g, h, i, j;
+    //initialize answers array
+
+    string answers[10] = { "Sun", "Venus", "Jupiter", "Moon", "Star", "Gravity", "Milky Way", "Sputnik 1", "Apollo 11", "New Horizons" };
 
     int score = 0;
-
-    cout << "1. What is the name of our closest star?" << endl;
+    
+    char answer;
+    //print questions and checking answers
+    cout << "1. What is the name of our closest star?" << endl; 
     cin.ignore();
     getline(cin, a);
-    if (a == "Sun")
+    if (a == answers[0])
         score++;
 
     cout << "2. Which planet is known as the \"Morning Star\" or \"Evening Star\"?" << endl;
     getline(cin, b);
-    if (b == "Venus")
+    if (b == answers[1])
         score++;
 
     cout << "3. What is the name of the largest planet in our solar system?" << endl;
     getline(cin, c);
-    if (c == "Jupiter")
+    if (c == answers[2])        
         score++;
 
     cout << "4. What is the name of the natural satellite that orbits Earth?" << endl;
     getline(cin, d);
-    if (d == "Moon")
+    if (d == answers[3])
         score++;
 
     cout << "5. What is the term used to describe a giant ball of gas that undergoes nuclear fusion in its core?" << endl;
     getline(cin, e);
-    if (e == "Star")
+    if (e == answers[4])
         score++;
 
     cout << "6. What force keeps planets in orbit around the Sun?" << endl;
     getline(cin, f);
-    if (f == "Gravity")
+    if (f == answers[5]) 
         score++;
 
     cout << "7. What is the name of the galaxy that contains our solar system?" << endl;
     getline(cin, g);
-    if (g == "Milky Way")
+    if (g == answers[6])
         score++;
 
     cout << "8. What is the name of the first artificial satellite launched into space by humans?" << endl;
     getline(cin, h);
-    if (h == "Sputnik 1")
+    if (h == answers[7])   
         score++;
 
     cout << "9. What is the name of the spacecraft that carried the first humans to land on the Moon?" << endl;
     getline(cin, i);
-    if (i == "Apollo 11")
+    if (i == answers[8])
         score++;
 
     cout << "10. What is the name of the spacecraft that visited Pluto in 2015?" << endl;
     getline(cin, j);
-    if (j == "New Horizons")
+    if (j == answers[9])
         score++;
-
+    //print mistakes and correct answers
     (a == "Sun") ? cout << "1. Correct" << endl : cout << "1. Wrong: Correct answer is Sun" << endl;
 
     (b == "Venus") ? cout << "2. Correct" << endl : cout << "2. Wrong: Correct answer is Venus" << endl;
@@ -80,13 +86,23 @@ void questionsEasy()
 
     (j == "New Horizons") ? cout << "10. Correct" << endl : cout << "10. Wrong: Correct answer is New Horizons" << endl;
 
-
-    string x[] = { a, b, c, d, e, f, g, h, i, j };
-    string ans[] = { "The Sun", "Constellation", "Mars", "Jupiter", "The Milky Way", "Axis", "Saturn", "Solar flare", "Neil Armstrong", "Greenhouse effect" };
-
     cout << " Your Score is " << score << "/10" << endl;
+
+    //Check for returning to main menu 
+    cout << "Do you want to try another difficulty?(y/n)" << endl;
+    cin >> answer;
+    if (answer == 'y')
+    {
+        system("cls");
+        menu(choice);
+    }
+    else
+    {
+        exit(0);
+    }
 }
 
+//function for normal question
 
 void questionsNormal()
 {
@@ -94,68 +110,74 @@ void questionsNormal()
     cout << "Every answer starts with capital letters even if it has two words like an answer." << endl;
     cout << "Press ENTER when you are ready with your answer." << endl;
     string a, b, c, d, e, f, g, h, i, j;
+    //initialize answers array
+
+    string answers[10] = { "NASA", "Kuiper Belt", "Aphelion", "Nuclear Fusion", "Salyut 1", "MAVENE", "SatSiriusurn", "Supernova", "Axis", "Nebula" };
 
     int score = 0;
 
+    char answer;
+    //print questions and checking answers
     cout << "1. What is the name of the space agency responsible for the Apollo Moon landings?" << endl;
     cin.ignore();
     getline(cin, a);
-    if (a == "NASA")
+    if (a == answers[0])
         score++;
 
     cout << "2. What is the name of the region beyond Neptune where many icy objects are located?" << endl;
     getline(cin, b);
-    if (b == "Kuiper Belt")
+    if (b == answers[1])
         score++;
 
 
     cout << "3. What is the term for the point in an object's orbit where it is farthest from the Sun?" << endl;
     getline(cin, c);
-    if (c == "Aphelion")
+    if (c == answers[2])
         score++;
 
 
     cout << "4. What is the name of the process by which a star transforms hydrogen into helium in its core?" << endl;
     getline(cin, d);
-    if (d == "Nuclear Fusion")
+    if (d == answers[3])
         score++;
 
 
     cout << "5. What is the name of the first space station, launched by the Soviet Union in 1971?" << endl;
     getline(cin, e);
-    if (e == "Salyut 1")
+    if (e == answers[4])
         score++;
 
 
     cout << "6. What is the name of the spacecraft launched by NASA to study Mars's atmosphere and climate?" << endl;
     getline(cin, f);
-    if (f == "MAVEN")
+    if (f == answers[5])
         score++;
 
 
     cout << "7. What is the name of the brightest star in the night sky?" << endl;
     getline(cin, g);
-    if (g == "Sirius")
+    if (g == answers[6])
         score++;
 
 
     cout << "8. What is the name of the phenomenon where a star explodes, briefly outshining an entire galaxy?" << endl;
     getline(cin, h);
-    if (h == "Supernova")
+    if (h == answers[7])
         score++;
 
 
     cout << "9. What is the term for the imaginary line around which an object rotates?" << endl;
     getline(cin, i);
-    if (i == "Axis")
+    if (i == answers[8])
         score++;
 
 
     cout << "10. What is the name of the large cloud of gas and dust in space from which stars are born?" << endl;
     getline(cin, j);
-    if (j == "Nebula")
+    if (j == answers[9])
         score++;
 
+    //print mistakes and correct answers
     (a == "NASA") ? cout << "1. Correct" << endl : cout << "1. Wrong: Correct answer is NASA (National Aeronautics and Space Administration)" << endl;
 
     (b == "Kuiper Belt") ? cout << "2. Correct" << endl : cout << "2. Wrong: Correct answer is Kuiper Belt" << endl;
@@ -176,80 +198,96 @@ void questionsNormal()
 
     (j == "Nebula") ? cout << "10. Correct" << endl : cout << "10. Wrong: Correct answer is Nebula" << endl;
     
-    string x[] = { a, b, c, d, e, f, g, h, i, j };
-    
-    string ans[] = { "NASA", "Kuiper Belt", "Aphelion", "Nuclear Fusion", "Salyut 1", "MAVENE", "SatSiriusurn", "Supernova", "Axis", "Nebula" };
-
 
     cout << "Your Score is " << score << "/10" << endl;
+
+    //Check for returning to main menu 
+    cout << "Do you want to try another difficulty?(y/n)" << endl;
+    cin >> answer;
+    if (answer == 'y')
+    {
+        system("cls");
+        menu(choice);
+    }
+    else
+    {
+        exit(0);
+    }
 }
 
 
+//function for hard question
 
 void questionsHard()
 {
     string a, b, c, d, e, f, g, h, i, j;
 
+
+    string answers[] = { "Apollo 11", "Big Bang Theory", "Voyager 1", "Supernova", "Time Dilation", "Andromeda Galaxy", "Crew Dragon", "Gravitational Lensing", "Hubble Space Telescope", "Multiverse Theory" };
+
     int score = 0;
 
+    char answer;
+    //print questions and checking answers
     cout << "1. What is the name of the mission that successfully placed humans on the Moon for the first time?" << endl;
     cin.ignore();
     getline(cin, a);
-    if (a == "Apollo 11")
+    if (a == answers[0])
         score++;
 
     cout << "2. What is the name of the theory that suggests the universe is expanding from a hot, dense state?" << endl;
     getline(cin, b);
-    if (b == "Big Bang Theory")
+    if (b == answers[1])
         score++;
 
 
     cout << "3. What is the name of the spacecraft launched in 1977, now in interstellar space?" << endl;
     getline(cin, c);
-    if (c == "Voyager 1")
+    if (c == answers[2])
         score++;
 
 
     cout << "4. What is the name of the process by which a star collapses under its gravity after exhausting its nuclear fuel?" << endl;
     getline(cin, d);
-    if (d == "Supernova")
+    if (d == answers[3])
         score++;
 
 
     cout << "5. What is the name of the effect that causes time to pass more slowly in strong gravitational fields?" << endl;
     getline(cin, e);
-    if (e == "Time Dilation")
+    if (e == answers[4])
         score++;
 
 
     cout << "6. What is the name of the closest spiral galaxy to the Milky Way?" << endl;
     getline(cin, f);
-    if (f == "Andromeda Galaxy")
+    if (f == answers[5])
         score++;
 
 
     cout << "7. What is the name of the spacecraft launched by SpaceX to transport astronauts to the International Space Station?" << endl;
     getline(cin, g);
-    if (g == "Crew Dragon")
+    if (g == answers[6])
         score++;
 
 
     cout << "8. What is the name of the phenomenon where light bends as it passes near a massive object?" << endl;
     getline(cin, h);
-    if (h == "Gravitational Lensing")
+    if (h == answers[7])
         score++;
 
 
     cout << "9. What is the name of the space telescope launched by NASA in 1990?" << endl;
     getline(cin, i);
-    if (i == "Hubble Space Telescope")
+    if (i == answers[8])
         score++;
 
     cout << "10. What is the name of the concept that suggests there may be other universes besides our own?" << endl;
     getline(cin, j);
-    if (j == "Multiverse Theory")
+    if (j == answers[9])
         score++;
 
+    //print mistakes and correct answers
     (a == "Apollo 11") ? cout << "1. Correct" << endl : cout << "1. Wrong: Correct answer is Apollo 11" << endl;
 
     (b == "Big Bang Theory") ? cout << "2. Correct" << endl : cout << "2. Wrong: Correct answer is Big Bang Theory" << endl;
@@ -270,8 +308,18 @@ void questionsHard()
 
     (j == "Multiverse Theory") ? cout << "10. Correct" << endl : cout << "10. Wrong: Correct answer is Multiverse Theory" << endl;
 
-    string x[] = { a, b, c, d, e, f, g, h, i, j };
-    string ans[] = { "Apollo 11", "Big Bang Theory", "Voyager 1", "Supernova", "Time Dilation", "Andromeda Galaxy", "Crew Dragon", "Gravitational Lensing", "Hubble Space Telescope", "Multiverse Theory" };
-
     cout << " Your Score is " << score << "/10" << endl;
+
+    //Check for returning to main menu 
+    cout << "Do you want to try another difficulty?(y/n)" << endl;
+    cin >> answer;
+    if (answer == 'y')
+    {
+        system("cls");
+        menu(choice);
+    }
+    else
+    {
+        exit(0);
+    }
 }
