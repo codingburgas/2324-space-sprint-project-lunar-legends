@@ -4,7 +4,6 @@
 
 void menu(int choice)
 {
-
     cout << endl;
     cout << " 1 - Start the game - Easy" << endl;
     cout << " 2 - Start the game - Normal" << endl;
@@ -17,4 +16,6 @@ void menu(int choice)
         questionsEasy();
     else if (choice == 2)
         questionsNormal();
+    else if (choice == 3)
+        questionsHard();
 }

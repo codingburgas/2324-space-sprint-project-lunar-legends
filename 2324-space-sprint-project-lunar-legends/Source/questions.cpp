@@ -2,7 +2,8 @@
 
 void questionsEasy()
 {
-    cout << "Instructions: \n Every answer starts with capital letters even if it has two words like an answer." << endl;
+    cout << "Instructions: " << endl;
+    cout << "Every answer starts with capital letters even if it has two words like an answer." << endl;
     cout << "Press ENTER when you are ready with your answer." << endl;
     string a, b, c, d, e, f, g, h, i, j;
 
@@ -83,7 +84,7 @@ void questionsEasy()
     string x[] = { a, b, c, d, e, f, g, h, i, j };
     string ans[] = { "The Sun", "Constellation", "Mars", "Jupiter", "The Milky Way", "Axis", "Saturn", "Solar flare", "Neil Armstrong", "Greenhouse effect" };
 
-    cout << " Your Score is " << score << "/10";
+    cout << " Your Score is " << score << "/10" << endl;
 }
 
 
@@ -154,4 +155,70 @@ void questionsNormal()
     getline(cin, j);
     if (j == "Nebula")
         score++;
+}
+
+void questionsHard()
+{
+    string a, b, c, d, e, f, g, h, i, j;
+
+    int score = 0;
+
+    cout << "1. What is the name of the mission that successfully placed humans on the Moon for the first time?" << endl;
+    cin.ignore();
+    getline(cin, a);
+    if (a == "Apollo 11")
+        score++;
+
+    cout << "2. What is the name of the theory that suggests the universe is expanding from a hot, dense state?" << endl;
+    getline(cin, b);
+    if (b == "Big Bang Theory")
+        score++;
+
+
+    cout << "3. What is the name of the spacecraft launched in 1977, now in interstellar space?" << endl;
+    getline(cin, c);
+    if (c == "Voyager 1")
+        score++;
+
+
+    cout << "4. What is the name of the process by which a star collapses under its gravity after exhausting its nuclear fuel?" << endl;
+    getline(cin, d);
+    if (d == "Supernova")
+        score++;
+
+
+    cout << "5. What is the name of the effect that causes time to pass more slowly in strong gravitational fields?" << endl;
+    getline(cin, e);
+    if (e == "Time Dilation")
+        score++;
+
+
+    cout << "6. What is the name of the closest spiral galaxy to the Milky Way?" << endl;
+    getline(cin, f);
+    if (f == "Andromeda Galaxy")
+        score++;
+
+
+    cout << "7. What is the name of the spacecraft launched by SpaceX to transport astronauts to the International Space Station?" << endl;
+    getline(cin, g);
+    if (g == "Crew Dragon")
+        score++;
+
+
+    cout << "8. What is the name of the phenomenon where light bends as it passes near a massive object?" << endl;
+    getline(cin, h);
+    if (h == "Gravitational Lensing")
+        score++;
+
+
+    cout << "9. What is the name of the space telescope launched by NASA in 1990?" << endl;
+    getline(cin, i);
+    if (i == "Hubble Space Telescope")
+        score++;
+
+    cout << "10. What is the name of the concept that suggests there may be other universes besides our own?" << endl;
+    getline(cin, j);
+    if (j == "Multiverse Theory")
+        score++;
+
 }
