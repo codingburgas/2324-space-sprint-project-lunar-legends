@@ -4,5 +4,5 @@
 
 using namespace std;
 void questionsEasy();
-void questionsNormal();
-void questionsHard();
+//void questionsNormal();
+//void questionsHard();

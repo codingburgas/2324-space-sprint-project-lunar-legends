@@ -1,4 +1,5 @@
 #include "../Header Files/menu.h"
+#include "../Header Files/questions.h"
 
 
 void menu(int choice)
@@ -13,9 +14,5 @@ void menu(int choice)
     cin >> choice;
 
     if (choice == 1)
-        void questionsEasy();
-    else if (choice == 2)
-        void questionsNormal();
-    else if (choice == 3)
-        void questionsHard();
+         questionsEasy();
 }
