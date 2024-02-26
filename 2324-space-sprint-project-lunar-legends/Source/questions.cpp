@@ -250,4 +250,28 @@ void questionsHard()
     if (j == "Multiverse Theory")
         score++;
 
+    (a == "Apollo 11") ? cout << "1. Correct" << endl : cout << "1. Wrong: Correct answer is Apollo 11" << endl;
+
+    (b == "Big Bang Theory") ? cout << "2. Correct" << endl : cout << "2. Wrong: Correct answer is Big Bang Theory" << endl;
+
+    (c == "Voyager 1") ? cout << "3. Correct" << endl : cout << "3. Wrong: Correct answer is Voyager 1" << endl;
+
+    (d == "Supernova") ? cout << "4. Correct" << endl : cout << "4. Wrong: Correct answer is Supernova" << endl;
+
+    (e == "Time Dilation") ? cout << "5. Correct" << endl : cout << "5. Wrong: Correct answer is Time Dilation" << endl;
+
+    (f == "Andromeda Galaxy") ? cout << "6. Correct" << endl : cout << "6. Wrong: Correct answer is Andromeda Galaxy" << endl;
+
+    (g == "Crew Dragon") ? cout << "7. Correct" << endl : cout << "7. Wrong: Correct answer is Crew Dragon" << endl;
+
+    (h == "Gravitational Lensing") ? cout << "8. Correct" << endl : cout << "8. Wrong: Correct answer is Gravitational Lensing" << endl;
+
+    (i == "Hubble Space Telescope") ? cout << "9. Correct" << endl : cout << "9. Wrong: Correct answer is Hubble Space Telescope" << endl;
+
+    (j == "Multiverse Theory") ? cout << "10. Correct" << endl : cout << "10. Wrong: Correct answer is Multiverse Theory" << endl;
+
+    string x[] = { a, b, c, d, e, f, g, h, i, j };
+    string ans[] = { "Apollo 11", "Big Bang Theory", "Voyager 1", "Supernova", "Time Dilation", "Andromeda Galaxy", "Crew Dragon", "Gravitational Lensing", "Hubble Space Telescope", "Multiverse Theory" };
+
+    cout << " Your Score is " << score << "/10" << endl;
 }
