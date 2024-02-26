@@ -175,8 +175,16 @@ void questionsNormal()
     (i == "Axis") ? cout << "9. Correct" << endl : cout << "9. Wrong: Correct answer is Axis" << endl;
 
     (j == "Nebula") ? cout << "10. Correct" << endl : cout << "10. Wrong: Correct answer is Nebula" << endl;
+    
+    string x[] = { a, b, c, d, e, f, g, h, i, j };
+    
+    string ans[] = { "NASA", "Kuiper Belt", "Aphelion", "Nuclear Fusion", "Salyut 1", "MAVENE", "SatSiriusurn", "Supernova", "Axis", "Nebula" };
 
+
+    cout << "Your Score is " << score << "/10";
 }
+
+
 
 void questionsHard()
 {
