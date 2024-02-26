@@ -155,6 +155,27 @@ void questionsNormal()
     getline(cin, j);
     if (j == "Nebula")
         score++;
+
+    (a == "NASA") ? cout << "1. Correct" << endl : cout << "1. Wrong: Correct answer is NASA (National Aeronautics and Space Administration)" << endl;
+
+    (b == "Kuiper Belt") ? cout << "2. Correct" << endl : cout << "2. Wrong: Correct answer is Kuiper Belt" << endl;
+
+    (c == "Aphelion") ? cout << "3. Correct" << endl : cout << "3. Wrong: Correct answer is Aphelion" << endl;
+
+    (d == "Nuclear Fusion") ? cout << "4. Correct" << endl : cout << "4. Wrong: Correct answer is Nuclear Fusion" << endl;
+
+    (e == "Salyut 1") ? cout << "5. Correct" << endl : cout << "5. Wrong: Correct answer is Salyut 1" << endl;
+
+    (f == "MAVEN") ? cout << "6. Correct" << endl : cout << "6. Wrong: Correct answer is MAVEN (Mars Atmosphere and Volatile Evolution)" << endl;
+
+    (g == "Sirius") ? cout << "7. Correct" << endl : cout << "7. Wrong: Correct answer is Sirius" << endl;
+
+    (h == "Supernova") ? cout << "8. Correct" << endl : cout << "8. Wrong: Correct answer is Supernova" << endl;
+
+    (i == "Axis") ? cout << "9. Correct" << endl : cout << "9. Wrong: Correct answer is Axis" << endl;
+
+    (j == "Nebula") ? cout << "10. Correct" << endl : cout << "10. Wrong: Correct answer is Nebula" << endl;
+
 }
 
 void questionsHard()
