@@ -14,5 +14,7 @@ void menu(int choice)
     cin >> choice;
 
     if (choice == 1)
-         questionsEasy();
+        questionsEasy();
+    else if (choice == 2)
+        questionsNormal();
 }
