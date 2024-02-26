@@ -181,7 +181,7 @@ void questionsNormal()
     string ans[] = { "NASA", "Kuiper Belt", "Aphelion", "Nuclear Fusion", "Salyut 1", "MAVENE", "SatSiriusurn", "Supernova", "Axis", "Nebula" };
 
 
-    cout << "Your Score is " << score << "/10";
+    cout << "Your Score is " << score << "/10" << endl;
 }
 
 
