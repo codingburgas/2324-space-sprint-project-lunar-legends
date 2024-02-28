@@ -1,6 +1,6 @@
 <h1 align="center">Team Lunar Legends</h1>
 ## Our Team
-<b>
+<br>
 <a href = “https://github.com/IMIvanov22“>  Ivan Ivanov [ Backend Developer ] </a><br>
 <a href=“https://github.com/MMDoychev22”>  Mitko Doychev [ Backend Developer ] </a><br>
 <a href=“https://github.com/SDDimitrov22”>  Stefan Dimitrov [ Backend Developer ] </a><br>
